@@ -1,13 +1,13 @@
 /* ============================================================
-   Alpha Desk — app.js
+   Conviction Monthly — app.js
    ============================================================ */
 
 const AGENTS = {
-  Quinn: { name: 'Q. Chen',    role: 'Macro & Rates Strategy',   initial: 'Q' },
-  Morgan:{ name: 'M. Okafor',  role: 'Sector & Equity Research', initial: 'M' },
-  Sage:  { name: 'S. Mehta',   role: 'Quantitative & Technical', initial: 'S' },
-  Remy:  { name: 'R. Dubois',  role: 'Risk & Position Sizing',   initial: 'R' },
-  Alex:  { name: 'A. Torres',  role: 'Markets & Fixed Income',   initial: 'A' },
+  Quinn: { name: 'Q. Chen',   role: 'Macro & Rates Strategy',   initial: 'Q' },
+  Morgan:{ name: 'M. Okafor', role: 'Sector & Equity Research', initial: 'M' },
+  Sage:  { name: 'S. Mehta',  role: 'Quantitative & Technical', initial: 'S' },
+  Remy:  { name: 'R. Dubois', role: 'Risk & Position Sizing',   initial: 'R' },
+  Alex:  { name: 'A. Torres', role: 'Markets & Fixed Income',   initial: 'A' },
 };
 
 const OUTCOME_LABELS = {
