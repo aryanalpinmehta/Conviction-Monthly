@@ -213,6 +213,129 @@ function openModal(r) {
     taEl.innerHTML = '<p style="color:var(--text-3);font-size:13px;">Technical data not available for this report.</p>';
   }
 
+  // Quarterly Data
+  const qdEl = document.getElementById('modal-quarterly');
+  if (r.quarterlyData && r.quarterlyData.length) {
+    const first = r.quarterlyData[0];
+    if (first.epsActual !== undefined) {
+      qdEl.innerHTML = `
+        <table class="earnings-table">
+          <thead>
+            <tr><th>Period</th><th>EPS Est</th><th>EPS Actual</th><th>Rev Est</th><th>Rev Actual</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            ${r.quarterlyData.map(q => `
+              <tr>
+                <td class="period-cell">${q.period}</td>
+                <td>${q.epsEstimate}</td>
+                <td class="${q.epsBeat ? 'beat' : 'miss'}">${q.epsActual}</td>
+                <td>${q.revenueEstimate}</td>
+                <td class="${q.revenueBeat ? 'beat' : 'miss'}">${q.revenueActual}</td>
+                <td><span class="beat-badge ${q.epsBeat ? 'beat' : 'miss'}">${q.epsBeat ? 'Beat' : 'Miss'}</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+        ${r.quarterlyData[0].note ? `<p class="earnings-note">${r.quarterlyData[0].note}</p>` : ''}
+      `;
+    } else if (first.startPrice !== undefined) {
+      qdEl.innerHTML = `
+        <table class="earnings-table">
+          <thead>
+            <tr><th>Period</th><th>Start</th><th>End</th><th>Return</th><th>Key Driver</th></tr>
+          </thead>
+          <tbody>
+            ${r.quarterlyData.map(q => `
+              <tr>
+                <td class="period-cell">${q.period}</td>
+                <td>${q.startPrice}</td>
+                <td>${q.endPrice}</td>
+                <td class="${q.quarterReturn && q.quarterReturn.startsWith('+') ? 'beat' : 'miss'}">${q.quarterReturn}</td>
+                <td>${q.keyDriver}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    } else if (first.returnVsSPY !== undefined) {
+      qdEl.innerHTML = `
+        <table class="earnings-table">
+          <thead>
+            <tr><th>Period</th><th>vs SPY</th><th>Constituents Beating</th><th>Key Driver</th></tr>
+          </thead>
+          <tbody>
+            ${r.quarterlyData.map(q => `
+              <tr>
+                <td class="period-cell">${q.period}</td>
+                <td class="${q.returnVsSPY && q.returnVsSPY.startsWith('+') ? 'beat' : 'miss'}">${q.returnVsSPY}</td>
+                <td>${q.constituentsBeating || 'N/A'}</td>
+                <td>${q.keyDriver}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    } else {
+      qdEl.innerHTML = `
+        <div class="fi-quarters">
+          ${r.quarterlyData.map(q => `
+            <div class="fi-quarter-card">
+              <div class="fi-quarter-label">${q.period}</div>
+              <div class="fi-quarter-main">${q.yieldOrNII || q.fundsFromOperations || 'N/A'}</div>
+              <div class="fi-quarter-return ${q.totalReturn && q.totalReturn.startsWith('+') ? 'beat' : 'miss'}">${q.totalReturn || ''}</div>
+              <div class="fi-quarter-note">${q.note || ''}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+  } else {
+    qdEl.innerHTML = '<p style="color:var(--text-3);font-size:13px;">Quarterly data not available.</p>';
+  }
+
+  // Wall Street Watching
+  document.getElementById('modal-wsw').innerHTML = (r.wallStreetWatching || []).map(w => `
+    <div class="wsw-card">
+      <div class="wsw-metric">${w.metric}</div>
+      <div class="wsw-value">${w.currentValue}</div>
+      <div class="wsw-why">${w.why}</div>
+    </div>
+  `).join('');
+
+  // Segment Revenue
+  document.getElementById('modal-segments').innerHTML = (r.segmentRevenue || []).map(s => `
+    <div class="segment-card">
+      <div class="segment-header">
+        <span class="segment-name">${s.segment}</span>
+        <span class="segment-revenue">${s.revenue}</span>
+        <span class="segment-growth ${s.revenueGrowth && s.revenueGrowth.startsWith('+') ? 'positive' : 'negative'}">${s.revenueGrowth}</span>
+      </div>
+      ${s.operatingMargin ? `<div class="segment-margin">Margin: ${s.operatingMargin}</div>` : ''}
+      <div class="segment-guidance">${s.guidance}</div>
+      ${s.analystView ? `<div class="segment-analyst">${s.analystView}</div>` : ''}
+    </div>
+  `).join('');
+
+  // Recommended Play
+  const rp = r.recommendedPlay;
+  if (rp) {
+    document.getElementById('modal-play').innerHTML = `
+      <div class="play-header">
+        <span class="play-action">${rp.action}</span>
+        <span class="play-timeframe">${rp.timeframe}</span>
+      </div>
+      <div class="play-levels">
+        <div class="play-level"><span class="play-level-label">Entry</span><span class="play-level-value">${rp.entry}</span></div>
+        <div class="play-level"><span class="play-level-label">Target</span><span class="play-level-value target">${rp.target}</span></div>
+        <div class="play-level"><span class="play-level-label">Stop</span><span class="play-level-value stop">${rp.stopLoss}</span></div>
+        <div class="play-level"><span class="play-level-label">Size</span><span class="play-level-value">${rp.positionSize}</span></div>
+      </div>
+      <p class="play-justification">${rp.justification}</p>
+      <div class="play-risk"><span class="play-risk-label">Key Risk:</span> ${rp.keyRisk}</div>
+      ${rp.catalysts ? `<div class="play-catalysts"><span class="play-catalysts-label">Catalysts:</span> ${rp.catalysts.join(' · ')}</div>` : ''}
+    `;
+  }
+
   // Analysts
   document.getElementById('modal-agents').innerHTML = r.agents.map(n => {
     const a = AGENTS[n];

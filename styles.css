@@ -1125,3 +1125,69 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Earnings / Quarterly Table ─────────────────────────── */
+.earnings-table { width:100%; border-collapse:collapse; font-size:12px; font-family:var(--font-mono); }
+.earnings-table th { padding:8px 10px; text-align:left; color:var(--text-3); font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid var(--border); }
+.earnings-table td { padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.04); color:var(--text-2); }
+.earnings-table tr:last-child td { border-bottom:none; }
+.period-cell { color:var(--text-1); font-weight:500; }
+td.beat, td.miss { font-weight:600; }
+td.beat { color:#3DD9C5; }
+td.miss { color:#FF6B6B; }
+.beat-badge { display:inline-block; padding:2px 8px; border-radius:3px; font-size:10px; font-weight:700; text-transform:uppercase; }
+.beat-badge.beat { background:rgba(61,217,197,0.12); color:#3DD9C5; }
+.beat-badge.miss { background:rgba(255,107,107,0.12); color:#FF6B6B; }
+.earnings-note { font-size:12px; color:var(--text-3); margin-top:10px; font-style:italic; }
+
+/* Fixed income / REIT quarter cards */
+.fi-quarters { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.fi-quarter-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:12px; }
+.fi-quarter-label { font-size:10px; font-weight:600; text-transform:uppercase; color:var(--text-3); letter-spacing:.06em; margin-bottom:6px; }
+.fi-quarter-main { font-family:var(--font-mono); font-size:13px; color:var(--text-1); font-weight:600; margin-bottom:4px; }
+.fi-quarter-return { font-family:var(--font-mono); font-size:12px; font-weight:600; margin-bottom:6px; }
+.fi-quarter-return.beat { color:#3DD9C5; }
+.fi-quarter-return.miss { color:#FF6B6B; }
+.fi-quarter-note { font-size:11px; color:var(--text-3); line-height:1.5; }
+
+/* ── Wall Street Watching ───────────────────────────────── */
+.wsw-grid { display:flex; flex-direction:column; gap:10px; }
+.wsw-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:14px 16px; }
+.wsw-metric { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--gold); margin-bottom:4px; }
+.wsw-value { font-family:var(--font-mono); font-size:13px; color:var(--text-1); margin-bottom:6px; }
+.wsw-why { font-size:12px; color:var(--text-2); line-height:1.6; }
+
+/* ── Segment Revenue ────────────────────────────────────── */
+.segments-grid { display:flex; flex-direction:column; gap:10px; }
+.segment-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:14px 16px; }
+.segment-header { display:flex; align-items:center; gap:12px; margin-bottom:8px; flex-wrap:wrap; }
+.segment-name { font-weight:600; font-size:13px; color:var(--text-1); }
+.segment-revenue { font-family:var(--font-mono); font-size:13px; color:var(--gold); margin-left:auto; }
+.segment-growth { font-family:var(--font-mono); font-size:12px; font-weight:600; }
+.segment-growth.positive { color:#3DD9C5; }
+.segment-growth.negative { color:#FF6B6B; }
+.segment-margin { font-size:11px; color:var(--text-3); margin-bottom:6px; }
+.segment-guidance { font-size:12px; color:var(--text-2); line-height:1.6; margin-bottom:6px; }
+.segment-analyst { font-size:11px; color:var(--text-3); font-style:italic; }
+
+/* ── Recommended Play ───────────────────────────────────── */
+.play-block { background:rgba(212,175,55,0.04); border:1px solid rgba(212,175,55,0.25); border-radius:var(--radius-md); padding:20px 24px; }
+.play-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; flex-wrap:wrap; gap:8px; }
+.play-action { font-size:16px; font-weight:700; color:var(--gold); }
+.play-timeframe { font-size:12px; color:var(--text-3); font-family:var(--font-mono); }
+.play-levels { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
+.play-level { background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px 12px; }
+.play-level-label { font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--text-3); margin-bottom:4px; }
+.play-level-value { font-family:var(--font-mono); font-size:13px; font-weight:600; color:var(--text-1); }
+.play-level-value.target { color:#3DD9C5; }
+.play-level-value.stop { color:#FF6B6B; }
+.play-justification { font-size:13px; color:var(--text-2); line-height:1.7; margin-bottom:12px; }
+.play-risk { font-size:12px; color:var(--text-2); margin-bottom:8px; }
+.play-risk-label { font-weight:700; color:#FF6B6B; margin-right:4px; }
+.play-catalysts { font-size:12px; color:var(--text-3); }
+.play-catalysts-label { font-weight:600; color:var(--text-2); margin-right:4px; }
+
+@media (max-width:640px) {
+  .play-levels { grid-template-columns:repeat(2,1fr); }
+  .fi-quarters { grid-template-columns:repeat(2,1fr); }
+}
