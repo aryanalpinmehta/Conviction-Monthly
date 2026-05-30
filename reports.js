@@ -1,6 +1,6 @@
 /* ============================================================
    Conviction Monthly — reports.js
-   24 reports: May 2024 – April 2026
+   25 reports: May 2024 – May 2026
    ============================================================ */
 
 const REPORTS = [
@@ -1181,6 +1181,58 @@ const REPORTS = [
       levels: "Support: $158 (double bottom low). Resistance: $176 (200-day MA), $180 (neckline). Breakout target: $205.",
       volume: "TSMC and Samsung combined FY2026 equipment orders: $50B+ publicly disclosed; equipment order-to-delivery lead time 12–18 months — revenue visibility through 2027.",
       positioning: "Semiconductor equipment sector underweight by 200bps vs MSCI World Technology in systematic funds — mean reversion toward benchmark weight with a catalyst calendar of specific fab announcements provides the timing trigger."
+    }
+  },
+
+  {
+    id: "2026-05",
+    month: "May 2026",
+    date: "2026-05-01",
+    title: "Broadcom and the Custom Silicon Inflection",
+    subtitle: "VMware cash flows fund the moat while hyperscaler XPU contracts lock in five-year revenue visibility.",
+    asset: "Broadcom Inc",
+    ticker: "AVGO",
+    assetClass: "Equity",
+    sector: "Semiconductors / Enterprise Software",
+    exchange: "NASDAQ",
+    priceAtTime: "AVGO $252",
+    targetPrice: "$310 – $340",
+    timeHorizon: "12 months",
+    rating: "Strong Buy",
+    ratingScore: 5,
+    agents: ["Morgan", "Sage", "Quinn"],
+    tags: ["Semiconductors", "AI", "Enterprise Software", "Networking"],
+    outcome: "in-progress",
+    outcomeNote: "Published May 1, 2026. 12-month verdict due May 2027.",
+    macroContext: "Federal funds rate at 4.50% after three cuts from the 5.25–5.50% peak. AI infrastructure capex continues accelerating: hyperscalers disclosed $280B combined 2026 data centre spending guidance in Q1 earnings. The market is asking when AI capex translates into commercial returns — Broadcom's XPU contracts answer that question with multi-year take-or-pay structures.",
+    thesis: "Broadcom occupies two durable positions that the market prices as a single cyclical semiconductor stock. The first is custom AI silicon: Google, Meta, and Apple each have Broadcom-designed XPUs that cannot be sourced elsewhere because the architecture, process node selection, and SERDES interconnect IP are co-developed under exclusivity. The second is VMware: 18 months post-acquisition, the 300,000-customer installed base is converting from perpetual licences to subscriptions at Broadcom's pace, generating a recurring software revenue stream with 70%+ gross margins funding the entire business.",
+    body: `<h3>Custom Silicon Economics: Why the XPU Contracts Matter</h3>
+<p>Custom AI accelerators — XPUs in Broadcom's terminology — are not plug-and-play components. Google's TPUv5, Meta's MTIA second generation, and Apple's upcoming server inference chip each required 3–4 years of joint development with Broadcom engineers working inside the customer's architecture teams. The process node selection, memory bandwidth configuration, and high-speed SERDES interconnect IP are all co-designed and patented jointly under long-term agreements. A hyperscaler switching XPU suppliers would restart a 3–4 year development cycle and forfeit the architectural advantages embedded in existing silicon. None of the three customers will accept that cost.</p>
+<h3>The Revenue Visibility NVIDIA Does Not Have</h3>
+<p>NVIDIA sells GPUs from inventory to whoever is buying — the demand is real but the commitment horizon is short. Broadcom's XPU contracts are structured as take-or-pay agreements covering 18–36 months of volume with committed pricing. Google disclosed in its Q1 2026 earnings call that TPU deployment would increase by 40% in 2026 and 2027 — that volume flows through Broadcom's custom silicon pipeline under contract, not at spot pricing. The revenue visibility embedded in AVGO's backlog is structurally superior to the GPU spot market dynamic.</p>
+<h3>Networking ASICs: The Ethernet vs InfiniBand War</h3>
+<p>AI clusters require switching fabric to move data between compute nodes. InfiniBand dominated this market for five years. Ethernet is displacing it. Broadcom's Tomahawk and Jericho3-AI switching ASICs power the 800G and 1.6T Ethernet fabric deployments at Meta, Microsoft Azure, and Google — all three announced full Ethernet migration plans for new cluster builds in 2025–2026. Ethernet wins on economics: switch ASICs are commodity-priced relative to InfiniBand. Broadcom captures the switching silicon for every new Ethernet AI cluster, whether the customer chooses Broadcom's XPU or NVIDIA's GPU for compute. This creates a partial revenue capture regardless of the GPU vs XPU outcome.</p>
+<h3>VMware Subscription Conversion: The Annuity Hidden in Plain Sight</h3>
+<p>Broadcom acquired VMware for $61B in October 2023. The market consensus at acquisition was that Broadcom overpaid. The reality 18 months later: Broadcom has converted 65% of the VMware installed base from perpetual licences to subscription agreements, generating annual recurring revenue that did not exist at acquisition close. Q2 FY2026 VMware segment revenue ran at $5.8B annually versus $4.2B in the pre-acquisition trailing twelve months. The 38% revenue increase reflects subscription pricing at higher per-user rates, not volume growth. As the remaining 35% of perpetual licence holders convert through 2027, VMware ARR approaches $7B — a subscription software business generating $5B in annual operating income at 70%+ gross margins, entirely separate from the cyclical semiconductor segments.</p>
+<h3>Capital Allocation and the $10B Buyback</h3>
+<p>Broadcom completed a $10B buyback programme in Q1 FY2026 at an average price of $228 per share. The board authorised a new $15B programme at the Q2 earnings announcement. With VMware operating cash flows running at $5B+ annually on top of the semiconductor business free cash flow, Broadcom can sustain aggressive buybacks without debt load increases — the capital allocation math is self-funding. Shares outstanding have declined 6% in the past 18 months. EPS growth at 26% year-over-year outpaces revenue growth of 19% because buybacks compound the per-share math.</p>
+<h3>Valuation and the Conglomerate Discount Problem</h3>
+<p>At $252, AVGO trades at 28x forward non-GAAP EPS of $9.10. Semiconductor peers (NVDA, AMD, QCOM) average 32x. Software peers (CRM, SNOW, MDB) average 40x+. Broadcom is a hybrid — 55% semiconductor revenue at semiconductor multiples and 45% software revenue at software multiples. A sum-of-parts at 30x semiconductor earnings ($4.80 EPS) and 38x software earnings ($4.30 EPS) produces a blended value of $308. The conglomerate discount is the opportunity: most semiconductor analysts lack the software-as-a-service valuation framework for the VMware segment, and most software analysts do not cover Broadcom. The mismatch compresses the multiple below either pure-play peer group.</p>`,
+    keyMetrics: [
+      { label: "VMware ARR Run Rate", value: "$5.8B (Q2 FY2026)" },
+      { label: "XPU Customer Count", value: "3 hyperscalers (Google, Meta, Apple)" },
+      { label: "FY2026 Non-GAAP EPS Guide", value: "$9.10" },
+      { label: "Buyback Programme", value: "$15B authorised" },
+      { label: "Combined Hyperscaler Capex 2026", value: "$280B disclosed" }
+    ],
+    technicalAnalysis: {
+      candlestick: "Ascending triangle from February 2026 — flat ceiling at $262, rising trough from $218 (January) to $240 (March) to $248 (April). Each pullback shallower than the last. Breakout above $262 targets $310 on the measured move equal to the triangle height.",
+      rsi14: "RSI(14): 62 on weekly — above the 50 midline but not overbought; prior breakouts from this ascending triangle pattern in AVGO history were accompanied by RSI readings of 65–70 at the moment of breakout, leaving 8–10 RSI points of room before momentum becomes crowded.",
+      macd: "Crossed above signal line April 14 on the weekly chart, first bullish cross since October 2025; histogram widening week over week — trend momentum confirming the ascending triangle rather than diverging from it.",
+      movingAverages: "AVGO $252; 50-day MA $240 (price above — trend-following systems bought the April reclaim); 200-day MA $228 (held as support in the January selloff, now 10% below spot — strong long-term trend base).",
+      levels: "Support: $240 (50-day MA), $228 (200-day MA, January low). Resistance: $262 (ascending triangle ceiling — breakout trigger), $280 (measured triangle target, prior 2025 high). Final target zone $310–$340.",
+      volume: "Q2 FY2026 earnings (March 2026): revenue +19% YoY to $14.9B, non-GAAP EPS $9.10 guide confirmed — volume spike 2.3x the 30-day average on earnings day, close near the session high. Institutional accumulation pattern visible in on-balance volume since February.",
+      positioning: "AVGO 30-day implied volatility: 28% vs 12-month historical volatility 32% — IV compressed relative to realised vol, making long delta exposure through shares or calls attractive. Short interest 1.8% of float — minimal squeeze risk but also no crowded long positioning to unwind. VMware segment underpriced by consensus: sell-side average VMware revenue estimate for FY2027 is $6.1B versus the $7B run rate implied by current conversion pace."
     }
   }
 ];
