@@ -2,14 +2,6 @@
    Conviction Monthly — app.js
    ============================================================ */
 
-const AGENTS = {
-  Quinn: { name: 'Q. Chen',   role: 'Macro & Rates Strategy',   initial: 'Q' },
-  Morgan:{ name: 'M. Okafor', role: 'Sector & Equity Research', initial: 'M' },
-  Sage:  { name: 'S. Mehta',  role: 'Quantitative & Technical', initial: 'S' },
-  Remy:  { name: 'R. Dubois', role: 'Risk & Position Sizing',   initial: 'R' },
-  Alex:  { name: 'A. Torres', role: 'Markets & Fixed Income',   initial: 'A' },
-};
-
 const OUTCOME_LABELS = {
   exceeded:    'Target Exceeded',
   'on-track':  'On Track',
@@ -37,23 +29,6 @@ const grid    = document.getElementById('reports-grid');
 const overlay = document.getElementById('modal-overlay');
 const modal   = document.getElementById('modal');
 
-/* ── Build Agent Team ────────────────────────────────────── */
-function buildAgentTeam() {
-  const container = document.getElementById('agents-list');
-  Object.values(AGENTS).forEach(agent => {
-    const el = document.createElement('div');
-    el.className = `agent-card agent-${agent.name.toLowerCase()}`;
-    el.innerHTML = `
-      <div class="agent-avatar">${agent.initial}</div>
-      <div>
-        <div class="agent-info-name">${agent.name}</div>
-        <div class="agent-info-role">${agent.role}</div>
-      </div>
-    `;
-    container.appendChild(el);
-  });
-}
-
 /* ── Render Cards ────────────────────────────────────────── */
 function ratingDots(score) {
   return Array.from({ length: 5 }, (_, i) =>
@@ -61,12 +36,6 @@ function ratingDots(score) {
   ).join('');
 }
 
-function agentPips(names) {
-  return names.map(n => {
-    const key = n.toLowerCase();
-    return `<div class="agent-pip pip-${key}" title="${n}">${n[0]}</div>`;
-  }).join('');
-}
 
 function renderCard(r, idx) {
   const acClass  = CLASS_MAP[r.assetClass] || 'ac-equity';
@@ -99,7 +68,6 @@ function renderCard(r, idx) {
     <div class="card-footer">
       <span class="outcome-badge ${outClass}">${outLabel}</span>
       <div style="display:flex; align-items:center; gap:8px;">
-        <div class="card-agents">${agentPips(r.agents)}</div>
         <span class="card-read-more">Read ›</span>
       </div>
     </div>
@@ -336,18 +304,6 @@ function openModal(r) {
     `;
   }
 
-  // Analysts
-  document.getElementById('modal-agents').innerHTML = r.agents.map(n => {
-    const a = AGENTS[n];
-    const cls = `pip-${n.toLowerCase()}`;
-    return `
-      <div class="attribution-agent">
-        <div class="agent-pip ${cls}">${n[0]}</div>
-        <span>${a.name} — ${a.role}</span>
-      </div>
-    `;
-  }).join('');
-
   // Retrospective
   const retro = document.getElementById('modal-retro');
   retro.className = `retro-block ${outClass}`;
@@ -420,7 +376,6 @@ function animateCount(el, target, duration = 1200) {
 
 /* ── Init ────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  buildAgentTeam();
   setupFilters();
   setupSearch();
   renderGrid();
