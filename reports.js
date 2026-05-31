@@ -155,7 +155,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares",
-      entry: "$850 – $920",
+      entry: "$850 – $875",
       target: "$1,200",
       stopLoss: "$780 (close below 200-day MA on weekly chart)",
       timeframe: "6–12 months",
@@ -307,7 +307,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy GLD ETF or physical gold equivalent",
-      entry: "$2,280 – $2,350",
+      entry: "$2,280 – $2,327",
       target: "$2,700",
       stopLoss: "$2,180 (close below the 50-week MA)",
       timeframe: "12 months",
@@ -439,7 +439,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy IWM shares or sell cash-secured puts at $195 strike",
-      entry: "$200 – $210 for shares; $195 strike for put sellers",
+      entry: "$200 – $205 for shares; $195 strike for put sellers",
       target: "$240",
       stopLoss: "$188 (close below the July 8 hammer low on weekly chart)",
       timeframe: "6–9 months",
@@ -710,7 +710,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy VNQ shares on the September rate cut catalyst",
-      entry: "$86 – $90",
+      entry: "$86 – $88",
       target: "$105",
       stopLoss: "$82 (close below the 50-week MA)",
       timeframe: "12 months",
@@ -849,7 +849,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy Bitcoin spot (via IBIT ETF) with defined stop",
-      entry: "$58,000 – $63,000",
+      entry: "$58,000 – $61,200",
       target: "$100,000",
       stopLoss: "$52,000 (close below the pre-ETF-approval support and Harris-outcome floor)",
       timeframe: "6–12 months",
@@ -993,7 +993,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares with tight stop at pre-election level",
-      entry: "$248 – $270 (post-election consolidation range)",
+      entry: "$242 – $250 (pre-breakout accumulation zone)",
       target: "$420",
       stopLoss: "$225 (close below the 50-day MA on a non-Trump-related event)",
       timeframe: "6 months",
@@ -1118,7 +1118,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy SHY ETF (1–3 year Treasury) as defensive income allocation",
-      entry: "$81.00 – $82.00",
+      entry: "$81.00 – $81.20",
       target: "$84.50 (equivalent to 2-year yield falling to 3.7%)",
       stopLoss: "$79.80 (2-year yield rising above 4.65%)",
       timeframe: "12 months",
@@ -1252,7 +1252,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy ITA ETF shares",
-      entry: "$146 – $152",
+      entry: "$146 – $148",
       target: "$185",
       stopLoss: "$138 (close below the ascending triangle base)",
       timeframe: "12 months",
@@ -1388,7 +1388,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy SLV ETF or physical silver equivalent",
-      entry: "$29 – $33",
+      entry: "$29 – $32",
       target: "$46",
       stopLoss: "$27 (close below the 200-day MA)",
       timeframe: "12 months",
@@ -1520,7 +1520,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy XLP ETF and hold through tariff uncertainty period",
-      entry: "$78 – $81",
+      entry: "$78 – $79.50",
       target: "$92",
       stopLoss: "$75 (close below 200-week MA)",
       timeframe: "12 months",
@@ -1771,7 +1771,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy QUAL and hold 60% QUAL / 40% XLP allocation",
-      entry: "$140 – $145 for QUAL",
+      entry: "$140 – $143 for QUAL",
       target: "$175",
       stopLoss: "$132 (close below the April 7 capitulation low on weekly chart)",
       timeframe: "12 months",
@@ -1923,7 +1923,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy LVMH ADR or Euronext shares on double bottom confirmation",
-      entry: "€570 – €610",
+      entry: "€570 – €580",
       target: "€720",
       stopLoss: "€520 (close below double bottom low)",
       timeframe: "12 months",
@@ -2061,7 +2061,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Split position: 60% CCJ shares, 40% U.UN (Sprott Physical Uranium Trust)",
-      entry: "CCJ $50 – $55; U.UN CAD $22 – $24",
+      entry: "CCJ $50 – $52; U.UN CAD $22 – $24",
       target: "CCJ $80; U.UN CAD $32",
       stopLoss: "CCJ $43 (200-day MA); U.UN CAD $20 (14-week base bottom)",
       timeframe: "18 months",
@@ -2193,7 +2193,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy INDA ETF with a phased entry over 2 months",
-      entry: "$52 – $56 (staggered: 50% at $54, add 50% below $52 if available)",
+      entry: "$50 – $54 (staggered: 50% at $54, add 50% on dips below $52)",
       target: "$70",
       stopLoss: "$48 (close below the April 2025 capitulation low on weekly chart)",
       timeframe: "18 months",
@@ -2483,7 +2483,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares or sell cash-secured puts at $800 strike",
-      entry: "$840 – $880 for shares; $800 put strike for put sellers",
+      entry: "$835 – $850 for shares; $800 put strike for put sellers",
       target: "$1,200",
       stopLoss: "$750 (close below the 200-day MA)",
       timeframe: "18 months",
@@ -2609,7 +2609,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy CQP common units for the distribution income",
-      entry: "$64 – $68",
+      entry: "$64 – $66",
       target: "$88",
       stopLoss: "$59 (close below 200-day MA)",
       timeframe: "12 months",
@@ -2755,7 +2755,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares on the Rule of 40 institutional rotation",
-      entry: "$42 – $46",
+      entry: "$42 – $44",
       target: "$72",
       stopLoss: "$38 (close below the November 2025 breakout level)",
       timeframe: "12 months",
@@ -2901,7 +2901,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy RHM.DE shares with EUR exposure unhedged",
-      entry: "€790 – €830",
+      entry: "€790 – €800",
       target: "€1,200",
       stopLoss: "€720 (200-day MA and cup handle base)",
       timeframe: "18 months",
@@ -3045,7 +3045,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy DBA ETF ahead of South American crop data",
-      entry: "$21.00 – $21.80",
+      entry: "$21.00 – $21.40",
       target: "$27",
       stopLoss: "$19.50 (close below pattern base, invalidating the La Nina thesis)",
       timeframe: "12 months",
@@ -3177,7 +3177,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy ARCC common shares for the 8.5% yield with appreciation potential",
-      entry: "$22.00 – $23.00",
+      entry: "$22.00 – $22.50",
       target: "$27",
       stopLoss: "$20.50 (close below the consolidation base)",
       timeframe: "12 months",
@@ -3323,7 +3323,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares on the double bottom confirmation with 200-day reclaim",
-      entry: "$168 – $178",
+      entry: "$168 – $172",
       target: "$220",
       stopLoss: "$152 (close below the double bottom low)",
       timeframe: "12 months",
@@ -3463,7 +3463,7 @@ const REPORTS = [
     ],
     recommendedPlay: {
       action: "Buy common shares on the ascending triangle breakout above $262",
-      entry: "$248 – $265 (accumulate through the triangle; add on confirmed break above $262)",
+      entry: "$248 – $252 (accumulate in the ascending triangle base)",
       target: "$335",
       stopLoss: "$228 (200-day MA; held as support in January 2026)",
       timeframe: "12 months",
@@ -3471,6 +3471,148 @@ const REPORTS = [
       justification: "The ascending triangle ceiling at $262 is the specific technical trigger. Semiconductor analysts who cover NVDA and AMD but not AVGO's software segment apply semiconductor multiples to 100% of the company. Software analysts who value VMware at 38x apply those multiples to 45% of EPS that semiconductor frameworks miss entirely. A sum-of-parts approach produces $308 at conservative multiples and $340 at historical peer multiples. Buying shares rather than options is correct here: 30-day IV at 28% sits below realised vol at 32%, making share ownership cheaper per unit of delta than call options.",
       keyRisk: "VMware subscription conversion stalls as enterprise IT buyers refuse forced migrations to subscription pricing; a class action or EU competition investigation into Broadcom's VMware pricing increases adds regulatory uncertainty that compresses the software multiple.",
       catalysts: ["Q2 FY2026 earnings (June 2026): VMware ARR disclosure crossing $6B confirms the upside to consensus", "Apple server XPU announcement disclosing Broadcom partnership for inference chips", "Networking ASIC TAM expansion announcement as 1.6T Ethernet fabric becomes the AI cluster standard"]
+    }
+  },
+  {
+    id: "2026-06",
+    month: "June 2026",
+    date: "2026-06-01",
+    title: "Meta's Advertising Machine and the AI Monetisation Gap",
+    subtitle: "Advantage+ AI compounds advertiser ROI while Llama infrastructure costs plateau. The market prices the spend without crediting the revenue engine.",
+    asset: "Meta Platforms",
+    ticker: "META",
+    assetClass: "Equity",
+    sector: "Digital Advertising / AI",
+    exchange: "NASDAQ",
+    priceAtTime: "META $680",
+    targetPrice: "$820 – $860",
+    timeHorizon: "12 months",
+    rating: "Buy",
+    ratingScore: 4,
+    agents: [],
+    tags: ["Digital Advertising", "AI", "Social Media", "Technology"],
+    outcome: "in-progress",
+    outcomeNote: "Published June 1, 2026. 12-month verdict due June 2027.",
+    macroContext: "Federal funds rate at 4.25% following the May 2026 cut. Global digital advertising spend recovered to $780B in 2025 and is tracking toward $870B in 2026, with AI-driven creative tools accelerating the conversion rates that justify higher CPM bids from performance advertisers. Small and mid-size businesses that previously lacked the creative capacity to produce video advertising now access AI-generated ad creative through Meta's native tooling, expanding the advertiser base without requiring Meta to hire more sales staff.",
+    thesis: "Meta operates the largest attention network on earth: 3.4 billion daily active users across Facebook, Instagram, WhatsApp, and Messenger. The Advantage+ AI advertising system converts that attention into measurable return on ad spend faster than any competing platform, and the gap is widening as the model trains on more conversion data each quarter. The market treats Meta's $40B annual AI infrastructure spend as a liability. The correct frame is that Advantage+ is the product that spend built, and the product is compounding advertiser retention in a way that CPM pricing does not yet reflect.",
+    body: `<h3>Advantage+: The Compounding ROI Engine</h3>
+<p>Advantage+ is Meta's AI-powered advertising system that automates audience targeting, bid optimisation, creative selection, and budget allocation within a single campaign structure. Before Advantage+, a performance advertiser managing a $500K monthly Facebook budget required a dedicated team to segment audiences, A/B test creatives, and adjust bids by placement. Advantage+ replaces that workflow with a model trained on trillions of conversion events. The advertiser sets the creative assets and the target action (purchase, app install, lead form); Advantage+ handles every downstream decision.</p>
+<p>The result is measurable. Meta's own advertiser data published in Q1 2026 showed Advantage+ campaigns delivering 32% lower cost-per-acquisition versus manual campaign structures for the same advertiser on the same creative. Independent measurement from AppsFlyer's performance index, which tracks 9,000 app advertisers across platforms, ranked Meta first for iOS and Android app install volume and first for purchase volume for the seventh consecutive quarter. Advertisers do not leave platforms that generate returns this repeatable.</p>
+<h3>The CPM Pricing Lag</h3>
+<p>Meta's average CPM (cost per thousand impressions) across the Family of Apps was $11.40 in Q1 2026, up 14% year over year but still below the $14.20 peak reached in Q4 2021. The 2021 peak occurred before Apple's App Tracking Transparency policy degraded attribution across the ecosystem and forced Meta to rebuild its measurement infrastructure. That rebuild completed in 2023. The Advantage+ model trained on the new privacy-safe signal stack through 2024 and 2025. CPMs in Q1 2026 reflect a market still anchored to the post-ATT trough rather than the delivery quality of the post-rebuild system. The gap between advertiser ROI (at all-time highs by the AppsFlyer measure) and CPM pricing (20% below the 2021 peak) is the valuation opportunity. CPMs reprice toward value delivered, not toward historical averages.</p>
+<h3>Llama and the Infrastructure Cost Plateau</h3>
+<p>Meta spent $38B on capital expenditures in 2025, the majority directed toward data centre capacity for Llama model training and inference. The market treated this as evidence of an AI cost spiral with no clear revenue return. The Q1 2026 guidance of $38–42B capex for the full year 2026 — essentially flat versus 2025 — signals that Meta reached the infrastructure scale required to run its AI product roadmap. Capex growth decelerates while the revenue from Advantage+, AI-generated creative tools, and the AI Studio platform accelerates. The operating leverage inflection follows directly from that dynamic.</p>
+<p>Llama 4 Scout and Maverick, released in Q1 2026, run efficiently at inference scale on Meta's existing hardware stack. Meta's decision to open-source Llama creates a secondary benefit: every enterprise and research institution training on Llama contributes safety and capability data that flows back into Meta's production models. The open-source strategy costs Meta nothing in marginal compute while generating a global testing and improvement network that proprietary models at OpenAI and Google cannot replicate.</p>
+<h3>Reality Labs: The Option the Market Prices at Zero</h3>
+<p>Reality Labs lost $5.2B in 2025 operating losses on $1.8B in revenue. The market discounts the segment to zero and focuses on the Family of Apps. That framing misses two assets. First, Ray-Ban Meta smart glasses, co-developed with EssilorLuxottica, generated over $1B in consumer revenue in 2025 and are the fastest-growing consumer hardware product Meta has shipped. The glasses carry an integrated AI assistant (Meta AI) that provides hands-free access to the Llama model via earpieces. At $329 retail, with a fashion-credible design, the product found a consumer market that the Quest headset never accessed. Second, Meta Horizon OS, the operating system powering Quest headsets, licensed to Lenovo and Asus for their own XR hardware in 2025, creating a platform royalty stream that did not exist before. Neither asset appears in consensus forecasts because analysts model Reality Labs as a cost centre rather than a nascent platform business.</p>
+<h3>WhatsApp Business: The Revenue Line Consensus Ignores</h3>
+<p>WhatsApp Business API monetisation is the least covered revenue driver in Meta's model. Businesses pay per-conversation fees to engage users on WhatsApp at scale: appointment reminders, order confirmations, customer service threads, and marketing messages. In India, Brazil, and Indonesia, WhatsApp is the primary digital communication layer for transactions, not SMS, not email. The business messaging revenue run rate crossed $2B annualised in Q4 2025 and is growing faster than Instagram or Facebook advertising in the geographies where WhatsApp penetration exceeds 80% of adults. The TAM is every B2C interaction that currently flows through SMS, email, or phone calls in markets where WhatsApp holds that communication layer. Consensus models treat WhatsApp as engagement infrastructure rather than a monetisation channel. The product team treats it as a $20B+ revenue opportunity over five years.</p>
+<h3>Valuation: What 22x Earnings Buys</h3>
+<p>At $680, META trades at 22x the FY2026 non-GAAP EPS consensus of $31.00. The S&P 500 median forward P/E sits at 21x. Meta, a company growing revenue at 17% annually, generating $55B+ in annual free cash flow, buying back 4% of shares outstanding per year, and holding a net cash position of $48B, trades one turn of earnings above the index median. Alphabet trades at 23x on 12% revenue growth. The relative pricing implies the market assigns no premium for Meta's higher growth rate, its superior free cash flow conversion, or the unmonetised optionality in WhatsApp Business and Reality Labs. A rerating to 27x forward earnings, in line with Alphabet's historical premium during periods of comparable growth, produces a share price of $837 on FY2026 consensus EPS.</p>`,
+    keyMetrics: [
+      { label: "Family of Apps DAU", value: "3.43B (Q1 2026)" },
+      { label: "Average CPM", value: "$11.40 (Q1 2026, up 14% YoY)" },
+      { label: "FY2026 Non-GAAP EPS Consensus", value: "$31.00" },
+      { label: "Annual Free Cash Flow", value: "$55B+ (FY2025 actual)" },
+      { label: "Net Cash Position", value: "$48B" },
+      { label: "Capex Guidance FY2026", value: "$38B – $42B (flat vs 2025)" }
+    ],
+    technicalAnalysis: {
+      candlestick: "Cup-and-handle base forming since January 2026. The cup low was $598 in February, recovery to $672 by April formed the right rim, then a 5% handle pullback to $648 in May before the current $680 reading. Cup-and-handle breakout above $690 targets $820 on the measured move equal to the depth of the cup.",
+      rsi14: "RSI(14): 58 on the weekly chart. The January selloff took RSI to 38, a level that marked the entry point for the December 2022 and October 2023 rallies. The recovery from 38 to 58 follows the same trajectory as both prior re-rating moves. RSI has room to reach 72–75 before momentum becomes extended.",
+      macd: "MACD crossed bullish on the weekly chart in mid-April 2026, the first bullish cross since the November 2025 post-earnings gap. Histogram width expanding week over week, consistent with institutional accumulation rather than a counter-trend bounce.",
+      movingAverages: "META $680; 50-day MA $655 (price above since April 22); 200-day MA $620 (held as support in the February 2026 selloff, now 9% below spot). The distance between the 50-day and 200-day MAs is widening, the golden cross completed in March 2026.",
+      levels: "Support: $655 (50-day MA), $620 (200-day MA and February low). Resistance: $690 (cup-and-handle breakout trigger and January 2026 high), $720 (measured move first target), $820 (measured move full target). Final target zone $820–$860.",
+      volume: "Q1 2026 earnings (April 30, 2026): revenue $52.1B versus $50.8B consensus, EPS $7.10 versus $6.50 consensus. Volume 2.8x the 30-day average on earnings day, close near the session high. Three subsequent sessions saw above-average volume on up days, confirming institutional participation rather than retail-driven bounce.",
+      positioning: "30-day implied volatility: 26% versus 12-month historical volatility 31%. IV compressed relative to realised vol, making long delta exposure through shares attractive versus options. Short interest: 1.2% of float. Sell-side consensus has 38 Buy ratings, 8 Hold, 2 Sell. The Hold and Sell cases centre on AI capex risk and Reality Labs losses, both of which are addressed by the Q1 2026 flat capex guidance."
+    },
+    quarterlyData: [
+      {
+        period: "Q1 2026 (Apr 2026)",
+        epsEstimate: "$6.50",
+        epsActual: "$7.10",
+        epsBeat: true,
+        revenueEstimate: "$50.8B",
+        revenueActual: "$52.1B",
+        revenueBeat: true,
+        note: "Advantage+ revenue penetration reached 58% of total Family of Apps advertising revenue, up from 44% a year earlier. Management guided FY2026 capex of $38–42B, flat versus 2025, triggering a 7% post-earnings move as the market repriced the capex-to-revenue inflection."
+      },
+      {
+        period: "Q4 2025 (Jan 2026)",
+        epsEstimate: "$8.10",
+        epsActual: "$8.80",
+        epsBeat: true,
+        revenueEstimate: "$56.2B",
+        revenueActual: "$58.4B",
+        revenueBeat: true,
+        note: "Holiday quarter CPM pricing rose 22% YoY as Advantage+ drove higher advertiser retention and budget concentration on Meta versus competing platforms. Ray-Ban Meta glasses crossed $1B in cumulative consumer revenue, disclosed for the first time as a standalone milestone."
+      },
+      {
+        period: "Q3 2025 (Oct 2025)",
+        epsEstimate: "$6.10",
+        epsActual: "$6.85",
+        epsBeat: true,
+        revenueEstimate: "$48.4B",
+        revenueActual: "$50.3B",
+        revenueBeat: true,
+        note: "WhatsApp Business API revenue crossed $2B annualised run rate for the first time. DAU across the Family of Apps reached 3.39B. Threads, Meta's Twitter competitor, disclosed 300M monthly active users with early advertising inventory tests generating above-average CPMs on brand safety grounds."
+      },
+      {
+        period: "Q2 2025 (Jul 2025)",
+        epsEstimate: "$5.20",
+        epsActual: "$5.65",
+        epsBeat: true,
+        revenueEstimate: "$46.0B",
+        revenueActual: "$47.8B",
+        revenueBeat: true,
+        note: "Instagram Reels advertising revenue surpassed Facebook Feed advertising revenue for the first time on a per-DAU basis, confirming that the shift to short-form video did not cannicalise CPMs. Llama 3.1 release opened the model to enterprise developers, expanding the third-party ecosystem that trains on Meta's open-source stack."
+      }
+    ],
+    wallStreetWatching: [
+      {
+        metric: "Advantage+ Revenue Penetration Rate",
+        currentValue: "58% of Family of Apps ad revenue in Q1 2026, up from 44% in Q1 2025",
+        why: "Each percentage point increase in Advantage+ penetration corresponds to roughly $800M in incremental annual revenue at current CPM rates, because Advantage+ campaigns convert at higher rates and retain advertiser budgets at higher renewal rates than manual campaigns. Consensus models extrapolate historical CPM growth rates without accounting for the mix shift toward Advantage+, understating FY2027 revenue by an estimated $4–6B."
+      },
+      {
+        metric: "WhatsApp Business API Annualised Revenue",
+        currentValue: "$2B annualised run rate as of Q3 2025; growing 80%+ year over year",
+        why: "WhatsApp Business is the only Meta product with double-digit billion-dollar revenue potential in a geography (Southeast Asia, South Asia, Latin America) where Meta's current ad CPMs are 70% below North American levels. Monetising business messaging through per-conversation fees rather than CPM advertising allows Meta to capture value from WhatsApp without inflating ad loads in a market sensitive to ad density. No consensus model includes WhatsApp Business revenue as a distinct line item."
+      },
+      {
+        metric: "Reality Labs Quarterly Operating Loss Trajectory",
+        currentValue: "$1.3B operating loss in Q1 2026, narrowing from $1.5B in Q1 2025",
+        why: "The bear case on META is that Reality Labs losses expand indefinitely. The Q1 2026 data contradicts that: losses narrowed 13% year over year despite hardware revenue growing as Ray-Ban Meta glasses scaled. The Horizon OS licensing deals with Lenovo and Asus create a recurring royalty stream that did not exist in FY2024 models. A path to Reality Labs breakeven by 2028 adds $8–10 per share to a DCF at current discount rates."
+      }
+    ],
+    segmentRevenue: [
+      {
+        segment: "Family of Apps (Facebook, Instagram, WhatsApp, Messenger, Threads)",
+        revenue: "$207B (FY2026 estimate)",
+        revenueGrowth: "+16% YoY",
+        operatingMargin: "47%",
+        guidance: "Management guided Q2 2026 revenue of $53–57B (midpoint $55B), implying continuation of the 16–18% growth rate. CPM expansion to $13–14 range by Q4 2026, driven by Advantage+ mix shift and the seasonal advertising concentration, is the operating leverage driver that pushes FY2026 operating income above $98B.",
+        analystView: "At 22x FY2026 EPS, the Family of Apps business alone, stripped of Reality Labs losses and the net cash balance, justifies the current share price on a conservative DCF. WhatsApp Business at $2B ARR growing 80% YoY is not in the model. Threads advertising inventory entering the market in 2026 is not in the model. Both represent free options embedded in the current multiple."
+      },
+      {
+        segment: "Reality Labs (Quest Headsets, Ray-Ban Meta, Horizon OS)",
+        revenue: "$2.2B (FY2026 estimate)",
+        revenueGrowth: "+22% YoY",
+        operatingMargin: "-290% (operating loss of $5.0B estimated FY2026)",
+        guidance: "Ray-Ban Meta glasses targeting 3M units in FY2026 at $329 ASP, generating $1.0B in hardware revenue at positive gross margin. Horizon OS licensing royalties from Lenovo and Asus beginning H2 2026 add a software revenue line with 90%+ gross margins. Management has not guided Reality Labs to profitability by a specific date, but the loss-narrowing trend creates a credible path to breakeven by 2028 without incremental capex.",
+        analystView: "Consensus assigns zero or negative value to Reality Labs. A realistic scenario where Reality Labs reaches breakeven by 2028 with $4B in revenue (Ray-Ban at 10M units, Quest 4 launch, Horizon OS royalties) adds $12–15 per META share at a 5x revenue multiple. The glasses product line is the near-term proof point: a fashion-forward, AI-integrated wearable at a mass-market price point is something neither Apple Vision Pro nor Google Glass achieved."
+      }
+    ],
+    recommendedPlay: {
+      action: "Buy common shares on the cup-and-handle breakout above $690",
+      entry: "$670 – $682 (accumulate in the cup-and-handle base)",
+      target: "$840",
+      stopLoss: "$618 (below the 200-day MA and the cup base; a close below this level invalidates the base)",
+      timeframe: "12 months",
+      positionSize: "3–5% of portfolio",
+      justification: "The cup-and-handle breakout at $690 is the specific technical trigger. Fundamentally, a company generating $55B in annual free cash flow and growing revenue at 16% annually should not trade at 22x earnings, one turn above the index median. The rerating catalyst is the combination of flat capex guidance removing the bear case and Advantage+ revenue penetration data confirming the revenue return on prior infrastructure investment. Buy shares rather than calls: 30-day IV at 26% is below realised vol at 31%, making long delta through stock cheaper per unit of exposure than options.",
+      keyRisk: "A resurgence of regulatory action from the EU Digital Markets Act forcing interoperability between WhatsApp and competing messaging platforms could degrade WhatsApp Business API revenue by reducing the exclusivity of the Meta messaging network. A reversal of the flat capex guidance, signalling further large-scale infrastructure investment, would compress the operating leverage narrative and likely reprice the stock below the 200-day MA.",
+      catalysts: ["Q2 2026 earnings (July 2026): Advantage+ penetration crossing 60% and WhatsApp Business ARR update", "Ray-Ban Meta unit sales disclosure showing 2M+ quarterly run rate", "Threads advertising inventory launch with disclosed CPM data above Facebook Feed benchmarks", "FY2026 buyback execution: $50B programme authorised in Q4 2025 at an average price below $640"]
     }
   }
 ];

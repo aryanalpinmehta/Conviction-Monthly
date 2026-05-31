@@ -99,7 +99,7 @@ function renderGrid() {
     return;
   }
 
-  filtered.forEach((r, i) => grid.appendChild(renderCard(r, i)));
+  filtered.slice().reverse().forEach((r, i) => grid.appendChild(renderCard(r, i)));
   updateScoreboard(filtered);
 }
 
