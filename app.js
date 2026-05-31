@@ -110,7 +110,7 @@ function updateScoreboard(list) {
     const key = r.outcome === 'correct' ? 'exceeded' : r.outcome;
     if (counts[key] !== undefined) counts[key]++;
   });
-  document.getElementById('score-exceeded').textContent  = counts.exceeded + counts.correct;
+  document.getElementById('score-exceeded').textContent  = counts.exceeded;
   document.getElementById('score-track').textContent     = counts['on-track'];
   document.getElementById('score-partial').textContent   = counts.partial;
   document.getElementById('score-mixed').textContent     = counts.mixed;
