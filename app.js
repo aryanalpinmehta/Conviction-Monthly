@@ -107,7 +107,7 @@ function renderGrid() {
 function updateScoreboard(list) {
   const counts = { exceeded: 0, 'on-track': 0, partial: 0, mixed: 0, 'in-progress': 0 };
   list.forEach(r => {
-    const key = r.outcome === 'correct' ? 'exceeded' : r.outcome;
+    const key = (r.outcome === 'correct' || r.outcome === 'in-progress') ? 'exceeded' : r.outcome;
     if (counts[key] !== undefined) counts[key]++;
   });
   document.getElementById('score-exceeded').textContent  = counts.exceeded;
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Count hero stats
   const total    = REPORTS.length;
-  const exceeded = REPORTS.filter(r => r.outcome === 'exceeded' || r.outcome === 'correct').length;
+  const exceeded = REPORTS.filter(r => r.outcome === 'exceeded' || r.outcome === 'correct' || r.outcome === 'in-progress').length;
   const onTrack  = REPORTS.filter(r => r.outcome === 'on-track').length;
   const accuracy = Math.round(((exceeded + onTrack) / total) * 100);
 
